@@ -134,7 +134,7 @@ The shared fields are why both the monument and snow screenshots ask for the sam
 
 The Aspen screenshot above is a direct example of a `snowdestination` instance.
 
-![Snow destination instance](images/add-snow.png)
+<img width="1064" height="615" alt="image" src="https://github.com/user-attachments/assets/2fd72080-2ddd-4244-9fa5-c418e59b3ffe" />
 
 ### `monumentdestination` — Derived Class
 
@@ -145,7 +145,8 @@ The Aspen screenshot above is a direct example of a `snowdestination` instance.
 
 The Keystone and Agra examples are two separate instances of this class.
 
-![Monument destination instance](images/add-monument-agra.png)
+<img width="1102" height="576" alt="image" src="https://github.com/user-attachments/assets/5c18be2c-ca53-49ea-b847-18f597e21d96" />
+<img width="1046" height="603" alt="image" src="https://github.com/user-attachments/assets/057a82eb-4d7f-470e-95cc-5abd6ea6483c" />
 
 ## Inheritance
 
@@ -165,7 +166,7 @@ A base-class pointer can therefore point to a `destination`, `snowdestination`, 
 
 The mixed saved history demonstrates why this is useful: monument and snow destinations can belong to the same trip log even though they contain different specialized information.
 
-![Mixed monument and snow records](images/database-records.png)
+
 
 ## Dynamic Memory and Copying
 
@@ -181,7 +182,7 @@ The program uses `ifstream` and `ofstream` with `database.txt`.
 
 **Saving:** When the user presses **E**, `user1.print(output_file)` sends every stored object's data back to `database.txt`.
 
-![Database file format](images/database-records.png)
+
 
 ## Program Flow
 
