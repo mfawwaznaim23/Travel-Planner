@@ -10,7 +10,11 @@ The screenshots below are from an actual run of the program. Each image is place
 
 When the program starts, it loads `database.txt` if the file exists and then displays three choices: **H** to view history, **T** to add a trip, and **E** to save and end the session. In the example below, the history is initially empty, so the program tells the user to add trips first.
 
-D<img width="1536" height="286" alt="image" src="https://github.com/user-attachments/assets/677b22f3-1307-4a3a-a7a6-331ffd8f93d8" />
+
+
+<img width="1536" height="286" alt="image" src="https://github.com/user-attachments/assets/677b22f3-1307-4a3a-a7a6-331ffd8f93d8" />
+
+
 
 
 ### 2. Adding a Monument Destination — Mount Rushmore
@@ -19,14 +23,22 @@ Pressing **T** starts the trip-entry process. The user enters the date, city, co
 
 This run adds **Keystone, USA**, with **MountRushmore** as the monument.
 
+
+
 <img width="1102" height="576" alt="image" src="https://github.com/user-attachments/assets/5c18be2c-ca53-49ea-b847-18f597e21d96" />
+
+
 
 
 ### 3. Adding Another Monument Destination — Taj Mahal
 
 The same monument flow can be used for another object. Here, the program adds **Agra, India**, identifies the destination as a monument, records it as a heritage monument, and stores **TajMahal** as the monument name.
 
+
+
 <img width="1046" height="603" alt="image" src="https://github.com/user-attachments/assets/057a82eb-4d7f-470e-95cc-5abd6ea6483c" />
+
+
 
 
 These two examples show that the same `monumentdestination` class can represent multiple monument-trip instances while keeping each object's own trip data.
@@ -37,7 +49,11 @@ Choosing **S** instead creates a `snowdestination`. In addition to the common tr
 
 In this example, **Aspen, USA** is added as a winter trip with **snowmass** recorded as a ski site.
 
+
+
 <img width="1064" height="615" alt="image" src="https://github.com/user-attachments/assets/2fd72080-2ddd-4244-9fa5-c418e59b3ffe" />
+
+
 
 
 ### 5. Saved Records in `database.txt`
@@ -49,7 +65,11 @@ Each destination is written in a compact format. The first character identifies 
 
 The remaining values store the date, city, country, estimated cost, vacation type, destination-specific name, and a Boolean value (`1` or `0`) for the heritage/ski-site property.
 
+
+
 <img width="1059" height="222" alt="image" src="https://github.com/user-attachments/assets/c208fbcd-4110-4c27-af2e-7a43502bd7b1" />
+
+
 
 
 For example, the Aspen line begins with `S`, while the Agra line begins with `M`. When the program starts again, it uses this first character to decide which derived object to reconstruct.
@@ -58,7 +78,11 @@ For example, the Aspen line begins with `S`, while the Agra line begins with `M`
 
 Pressing **H** reads the saved records from `database.txt`. Depending on whether a record begins with `S` or `M`, the program rebuilds the corresponding destination data and calls that destination's `output_display()` function.
 
+
+
 <img width="1065" height="330" alt="image" src="https://github.com/user-attachments/assets/d7e90e9d-d0fc-4dbf-b43f-1f253ae685fe" />
+
+
 
 
 The result is a readable history containing monument trips such as Keystone and Agra and snow trips such as Aspen and Alaska.
@@ -67,7 +91,11 @@ The result is a readable history containing monument trips such as Keystone and 
 
 Pressing **E** opens `database.txt` for output, calls `user1.print(output_file)`, writes the destinations stored in the log, closes the file, prints `GoodBye!`, and ends the loop.
 
+
+
 <img width="901" height="170" alt="image" src="https://github.com/user-attachments/assets/3a99ebb0-7c66-43b6-a8b3-16af2eb92514" />
+
+
 
 
 This allows the saved trips to be loaded again the next time the program runs.
